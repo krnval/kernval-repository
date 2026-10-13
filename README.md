@@ -1,2 +1,5 @@
-# kernval-s-repository
-repositorio de kernval
+# kernvals-repository
+repositorio de kernval! 
+
+# Alumno de CIFPZonzamas
+## Profesional en Sistemas Microinformaticos y Redes.
