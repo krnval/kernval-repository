@@ -2,4 +2,6 @@
 repositorio de kernval! 
 
 # Alumno de CIFPZonzamas
-## Profesional en Sistemas Microinformaticos y Redes.
+Profesional en Sistemas Microinformaticos y Redes.
+
+Cursando 2º SMR y en busqueda activa de empleo.
