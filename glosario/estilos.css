@@ -1,0 +1,22 @@
+/* Hoja de estilos del glosario. No hace falta tocarla. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #1f2937; background: #eef3f6; line-height: 1.55; }
+header { background: #12304a; color: #fff; padding: 36px 24px; text-align: center; }
+header h1 { margin: 6px 0 10px; font-size: 2.2rem; }
+header .modulo { margin: 0; color: #7dd3c8; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: .85rem; }
+main { max-width: 1000px; margin: 0 auto; padding: 24px 16px 40px; }
+section { background: #fff; border: 1px solid #d9e2ea; border-radius: 14px; padding: 24px 28px; margin-bottom: 22px; }
+h2 { margin-top: 0; color: #12304a; border-bottom: 3px solid #7dd3c8; padding-bottom: 6px; }
+a { color: #2a9d8f; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; }
+thead th { background: #12304a; color: #fff; text-align: left; padding: 10px 12px; }
+tbody th { text-align: left; color: #12304a; padding: 10px 12px; white-space: nowrap; vertical-align: top; }
+td { padding: 10px 12px; vertical-align: top; }
+tbody tr { border-bottom: 1px solid #e3e9ef; }
+tbody tr:nth-child(even) { background: #f7fafb; }
+.evidencias { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+figure { margin: 0; background: #f3f8fa; border: 1px solid #d9e2ea; border-radius: 10px; padding: 12px; }
+figure img { width: 100%; height: auto; display: block; border-radius: 6px; background: #fff; min-height: 60px; }
+figcaption { margin-top: 8px; font-size: .95rem; color: #5b6b7a; }
+footer { text-align: center; color: #5b6b7a; font-size: .9rem; padding-bottom: 30px; }
+@media (max-width: 640px) { tbody th { white-space: normal; } }

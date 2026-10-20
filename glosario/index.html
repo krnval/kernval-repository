@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romeo de Iscar</title>
+  <link rel="icon" href="capturas/gn-logo.svg" type="image/png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <p class="modulo">Aplicaciones Web · 2º SMR · UT1</p>
+    <h1>Glosario</h1>
+    <p>Hecho por: <strong> Romeo (kernval)</strong></p>
+  </header>
+
+  <main>
+
+    <section id="mi-web">
+      <h2>La web que he elegido</h2>
+      <p>He elegido <a href="https://www.blackmagicdesign.com/"> Blackmagic Design</a> porque me encantan sus programas de edición como Davinci Resolve y Davinci Recolor.</p>
+    </section>
+
+    <section id="glosario">
+      <h2>Glosario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Término</th>
+            <th>Definición con mis palabras</th>
+            <th>Ejemplo en mi web</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">Cliente</th>
+          <td>Es el dispositivo o programa (chrome, firefox, edge, tor, brave, etc) que utiliza una persona para solicitar páginas web.</td>
+          <td>En Blackmagic Design, el cliente es mi propio navegador web en mi ordenador, que envía peticiones HTTP GET a los servidores de Blackmagic Design para pedir la pagina de inicio, las imagenes de sus productos y las hojas de estilo.</td>
+        </tr>
+        <tr>
+          <th scope="row">Servidor</th>
+          <td>El servidor es donde se almacenan los datos (fisicamente, hardware), donde se almacenan los .html, .php, .css, .png y demás.</td>
+          <td>En este caso el servidor seria www.blackmagicdesign.com y como tal seria el encargado de mostrarnos todo dentro de la pagina.</td>
+        </tr>
+        <tr>
+          <th scope="row">Servidor web</th>
+          <td>Es el software o programa que se ejecuta dentro del servidor, encargado de escuchar las peticiones HTTP/HTTPS que hace el cliente y responder enviando los archivos (.html, .css, imágenes).</td>
+          <td>En esta web, es el servicio (como Nginx o Cloudflare) que recibe nuestra petición al entrar a www.blackmagicdesign.com y nos devuelve el código de la página con un estado 200 OK.</td>
+        </tr><tr>
+          <th scope="row">Apache</th>
+          <td>Es uno de los programas de servidor web más conocidos y veteranos; se encarga de recibir peticiones de los usuarios y entregarles las páginas web.</td>
+          <td>Aunque Blackmagic utiliza sistemas de distribución y balanceo como Cloudflare/Nginx en su capa externa, Apache representa el tipo de servidor HTTP tradicional que despacha contenido en arquitecturas web clásicas.</td>
+        </tr>
+        <tr>
+          <th scope="row">URL</th>
+          <td>Es la dirección única y completa que escribes en el navegador para encontrar y abrir una página o archivo específico en internet.</td>
+          <td>En nuestra web, la URL completa para acceder a la sección de productos es https://www.blackmagicdesign.com/es/products.</td>
+        </tr>
+        <tr>
+          <th scope="row">Protocolo</th>
+          <td>Es el conjunto de reglas y normas que define cómo deben comunicarse dos dispositivos entre sí para entenderse sin errores.</td>
+          <td>Al inicio de la dirección de Blackmagic vemos el protocolo HTTPS, que indica el uso de transferencias seguras y cifradas.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dominio</th>
+          <td>Es el nombre fácil de recordar que identifica a un sitio web en internet para no tener que memorizar su dirección IP numérica.</td>
+          <td>En esta web, el dominio principal es blackmagicdesign.com.</td>
+        </tr>
+        <tr>
+          <th scope="row">Ruta</th>
+          <td>Es la parte de la dirección web que va después del dominio e indica la carpeta o página concreta que se está consultando.</td>
+          <td>En la dirección https://www.blackmagicdesign.com/es/products, la ruta es /es/products.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección IP</th>
+          <td>Es la matrícula o identificador numérico único que tiene cada equipo conectado a internet para poder enviar y recibir datos.</td>
+          <td>Al hacer la resolución del dominio de Blackmagic Design en la consola, obtenemos direcciones IP públicas asignadas a sus servidores (demostrado en nuestra captura nslookup.png).</td>
+        </tr>
+        <tr>
+          <th scope="row">DNS</th>
+          <td>Es como la agenda telefónica de internet; traduce los nombres de dominio que escribimos a direcciones IP que las máquinas entienden.</td>
+          <td>Cuando escribimos blackmagicdesign.com en el navegador, el servicio DNS busca la IP de sus servidores para que podamos conectar con ellos.</td>
+        </tr>
+        <tr>
+          <th scope="row">HTTP</th>
+          <td>Es el protocolo estándar de comunicación que usan navegadores y servidores web para enviarse páginas, texto e imágenes.</td>
+          <td>Es el mecanismo base con el que nuestro navegador solicita cada imagen de las cámaras o páginas informativas al servidor.</td>
+        </tr>
+        <tr>
+          <th scope="row">HTTPS</th>
+          <td>Es la versión protegida de HTTP, que añade una capa de cifrado para que nadie entre el usuario y el servidor pueda espiar o modificar los datos.</td>
+          <td>Se aprecia en el candado verde/gris junto a la dirección de Blackmagic Design, garantizando que la navegación es privada y segura (como se ve en https.png).</td>
+        </tr>
+        <tr>
+          <th scope="row">Puerto</th>
+          <td>Es una puerta de entrada virtual numerada dentro de un servidor que permite dirigir el tráfico al servicio correcto (web, correo, etc.).</td>
+          <td>Al acceder a la web por HTTPS, la conexión se realiza por defecto a través del puerto seguro 443 del servidor.</td>
+        </tr>
+        <tr>
+          <th scope="row">Petición</th>
+          <td>Es el mensaje que el navegador envía al servidor pidiéndole ver una página, descargar un archivo o enviar un formulario.</td>
+          <td>Ocurre cuando pulsamos en la pestaña de DaVinci Resolve y el navegador envía una petición HTTP GET para obtener ese contenido (visible en red.png).</td>
+        </tr>
+        <tr>
+          <th scope="row">Respuesta</th>
+          <td>Es el paquete de datos que el servidor manda de vuelta al navegador tras procesar la petición, incluyendo el contenido o un aviso de error.</td>
+          <td>Es el código HTML, estilos CSS y fotografías que el servidor de Blackmagic nos envía de vuelta para pintar la página en pantalla.</td>
+        </tr>
+        <tr>
+          <th scope="row">Código de estado</th>
+          <td>Es un número de tres dígitos que el servidor incluye en su respuesta para avisar al navegador de cómo ha ido la solicitud (éxito, error, redirección).</td>
+          <td>En la pestaña Red (red.png) se comprueba que la página principal responde con el código 200 OK, indicando que la carga ha sido exitosa.</td>
+        </tr>
+        <tr>
+          <th scope="row">Web estática</th>
+          <td>Es una página web cuyos archivos están guardados tal cual en el servidor y siempre muestran el mismo contenido a todos los visitantes sin cambiar.</td>
+          <td>Partes informativas fijas de Blackmagic, como el texto legal de términos de uso o la ficha estática de especificaciones de un cable.</td>
+        </tr>
+        <tr>
+          <th scope="row">Web dinámica</th>
+          <td>Es una web cuyo contenido se genera o actualiza al momento mediante código y bases de datos según el usuario, idioma o búsqueda.</td>
+          <td>La tienda oficial de Blackmagic o los filtros de soporte técnico y descargas, que varían según el país seleccionado y el producto que busques.</td>
+        </tr>
+        <tr>
+          <th scope="row">PHP</th>
+          <td>Es un lenguaje de programación que se ejecuta en el servidor web para crear páginas dinámicas antes de mandárselas al usuario.</td>
+          <td>Representa la tecnología del lado del servidor que procesa las consultas de compatibilidad de cámaras o los formularios de registro de DaVinci Resolve.</td>
+        </tr>
+        <tr>
+          <th scope="row">Base de datos</th>
+          <td>Es un almacén digital organizado donde se guardan grandes cantidades de datos (usuarios, productos, precios) para consultarlos rápidamente.</td>
+          <td>El sistema donde Blackmagic tiene almacenado todo su catálogo de productos, números de serie, versiones de software y precios por región.</td>
+        </tr>
+        <tr>
+          <th scope="row">LAMP</th>
+          <td>Es un paquete clásico de tecnologías libres para montar servidores web: Linux (sistema), Apache (servidor web), MySQL (base de datos) y PHP (lenguaje).</td>
+          <td>Es la infraestructura típica sobre la que se fundamentan los servicios de backend y paneles internos para gestionar sitios web como el de Blackmagic.</td>
+        </tr>
+        <tr>
+          <th scope="row">JSON</th>
+          <td>Es un formato de texto muy ligero y ordenado (con claves y valores entre llaves) que usan los programas para pasarse datos entre sí.</td>
+          <td>Se evidencia en la captura json.png, donde las llamadas asíncronas de la web reciben listados de datos estructurados para actualizar la interfaz.</td>
+        </tr>
+        <tr>
+          <th scope="row">XML</th>
+          <td>Es un lenguaje de etiquetas similar al HTML pensado para almacenar y transportar datos de forma estructurada y legible para humanos y máquinas.</td>
+          <td>Se utiliza en la web en archivos como el sitemap (mapa del sitio XML) para que los motores de búsqueda como Google indexen todos los productos de Blackmagic.</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="evidencias">
+      <h2>Evidencias</h2>
+      <div class="evidencias">
+      <figure>
+        <img src="capturas/url.png" alt="Barra de direcciones de mi web con sus partes señaladas">
+        <figcaption>Aqui tenemos el URL de la pagina web que podemos ver perfectamente</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/nslookup.png" alt="Resultado de nslookup con el dominio de mi web">
+        <figcaption>Aqui podemos observar como es que cuando le hacemos nslookup a la pagina web nos salta nuestras direcciones y luego las de Blackmagic Design</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/red.png" alt="Pestaña Red de F12 con una petición y su código de estado">
+        <figcaption>Aqui podemos ver que cuando hago el F12 y pongo el modo de Red sale perfectamente que el navegador le envio una peticion al servidor de que quiero acceder.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/https.png" alt="Candado e información del certificado de mi web">
+        <figcaption>Aqui se ve como el propio Firefox marca como que esta pagina web es segura y tiene protección anti ladrones digamos</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/json.png" alt="Pestaña Red de F12, filtro Fetch/XHR, con una respuesta en JSON">
+        <figcaption>Aqui podemos ver que tengo el F12 puesto con la pestaña de Red activa y que tenemos una posible respuesta de JSON (Metodo POST)</figcaption>
+      </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Aplicaciones Web · 2º SMR</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Guarden aquí sus capturas con estos nombres exactos:
+
+url.png
+nslookup.png
+red.png
+https.png
+json.png
